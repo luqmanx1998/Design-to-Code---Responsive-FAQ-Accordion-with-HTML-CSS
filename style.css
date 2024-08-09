@@ -1,0 +1,148 @@
+/*--------------------CUSTOM STYLES-------------------*/
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-pink: hsl(275, 100%, 97%);
+    --color-gray-purple: hsl(292, 16%, 49%);
+    --color-dark-purple: hsl(292, 42%, 14%);
+}
+
+/*--------------------CSS RESET-------------------*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*-------------------GENERAL STYLES--------------------*/
+body {
+    font-family: "Work Sans", sans-serif;
+    padding-inline: 2rem;
+    background-color: var(--color-light-pink);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-gray-purple);
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--color-dark-purple);
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 20rem;
+}
+
+.border-bottom {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--color-light-pink);
+}
+
+/*-------------------ACCORDION STYLES--------------------*/
+.accordion {
+    padding: 1.8rem 1.8rem 0;
+    list-style: none;
+    border-radius: .6rem;
+    background-color: var(--color-white);
+    max-width: 60rem;
+}
+
+.accordion__header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.accordion__header img {
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.accordion li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.accordion li label {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.accordion li label:hover {
+    color: var(--color-gray-purple);
+}
+
+.faq-checkbox {
+    display: none;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-checkbox:checked + .faq-question + .faq-answer {
+    max-height: 100rem;
+    padding-bottom: 1.6rem;
+}
+
+.faq-checkbox:checked + .faq-question .faq-icon {
+    background-image: url("assets/images/icon-minus.svg");
+}
+
+.faq-icon {
+    background-image: url("assets/images/icon-plus.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+@media only screen and (min-width: 48em) {
+    body {
+        background-image: url("assets/images/background-pattern-desktop.svg");
+    }
+
+    .accordion {
+        padding: 2.6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}

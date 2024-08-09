@@ -133,6 +133,11 @@ h2 {
         padding: 2.6rem;
     }
 
+    .accordion__header img {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
     h1 {
         font-size: 4rem;
     }

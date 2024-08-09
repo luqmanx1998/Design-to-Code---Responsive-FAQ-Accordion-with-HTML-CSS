@@ -1,6 +1,6 @@
 # FAQ Accordion - Responsive with HTML/CSS Only!
 
-![DESIGN-IMG](design/desktop-preview.jpgpreview.jpg)
+![DESIGN-IMG](design/desktop-preview.jpg)
 
 ## Overview
 

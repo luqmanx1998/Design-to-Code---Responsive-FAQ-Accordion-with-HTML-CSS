@@ -8,7 +8,7 @@ This FAQ Accordion challenge was a small and rather simple one, in the sense tha
 
 ## Challenges Faced
 
-- **Functional CSS** 
+- **Functional CSS:** 
   As I mentioned, this challenge was meant to be done with Javascript, but I knew it could be accomplished with just HTML and CSS, with a few tricks. I was aware that I could use the 'checkbox method' in order to accomplish this, utilising `input type="checkbox"`, `label for`, and the `:checked:` pseudo-class, in order to simulate click events ! That being said, it's my first time actually using this trick on my own, so I had to take my time with it, and I'm happy with the end result !
 
 - **Background Positioning:** 
